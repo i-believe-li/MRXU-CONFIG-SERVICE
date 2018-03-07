@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: user-service
+  # http请求设置
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+
+# 自动分配端口
+server:
+  port: 0
+  tomcat.uri-encoding: UTF-8
+
+# eureka客户端设置，生成随机端口
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.int}
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSecond: 2
+
