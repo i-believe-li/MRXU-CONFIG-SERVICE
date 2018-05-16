@@ -1,7 +1,11 @@
 .classpath
 .project
-target
-.settings
-.iml
+.settings/
+target/
+./target/
+*/.settings/
+*.iml
+*/*.iml
+*/.idea/
 .idea/
-/MRXU-CONFIG-SERVICE.iml
+/config-service.iml
